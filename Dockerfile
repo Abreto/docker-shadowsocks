@@ -4,7 +4,9 @@ FROM ubuntu
 LABEL maintainer="Abreto<m@abreto.net>"
 
 RUN apt-get update && apt-get install -qy \
-    python-pip
+    git \
+    python-pip \
+    python-pysodium
 
 RUN pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
