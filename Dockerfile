@@ -13,4 +13,5 @@ RUN pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 WORKDIR /bootstrap
 COPY entrypoint.sh .
 
+EXPOSE 443
 ENTRYPOINT [ "bash", "entrypoint.sh" ]
